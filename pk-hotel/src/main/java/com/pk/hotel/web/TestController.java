@@ -13,6 +13,11 @@ public class TestController {
     @RequestMapping("/index")
     public String index(Model model){
         model.addAttribute("host", "www.baicu.com");
-        return "index";
+        return "/index";
+    }
+
+    @RequestMapping("/consumers")
+    public String consumers(){
+        return "/consumers";
     }
 }

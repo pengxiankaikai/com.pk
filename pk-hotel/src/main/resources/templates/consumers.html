@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <title>Title</title>
     <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/rooms.css" />
+    <link rel="stylesheet" href="/css/consumers.css" />
 
     <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
-    <!--header-->
-    <div class="container">
-        <!--导航栏-->
-        <nav class="navbar navbar-inverse" role="navigation">
+<!--header-->
+<div class="container">
+    <!--导航栏-->
+    <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -67,63 +67,89 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-        <!--房间栏目信息-->
+    <section class="widget">
+        <header>
+            <span></span>
+        </header>
         <div class="content">
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>64</span></p>
-                    <p>Pages</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
-            <section class="stats-wrapper">
-                <div class="stats">
-                    <p><span>7</span></p>
-                    <p>Users</p>
-                </div>
-            </section>
+            <table id="myTable" border="0" width="100">
+                <thead>
+                <tr>
+                    <th class="header">Page title</th>
+                    <th class="header">Date</th>
+                    <th class="header">Child pages</th>
+                    <th class="header">Comments</th>
+                    <th class="header">Author</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                    <td><input type="checkbox"/> Home</td>
+                    <td>01/3/2013</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/> Services</td>
+                    <td>01/3/2013</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr class="odd">
+                    <td><input type="checkbox"/> Portfolio</td>
+                    <td>02/3/2013</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/> About us</td>
+                    <td>02/3/2013</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr class="odd">
+                    <td><input type="checkbox"/> Blog</td>
+                    <td>02/3/2013</td>
+                    <td>32</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/> Contact us</td>
+                    <td>03/3/2013</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr class="odd">
+                    <td><input type="checkbox"/> Our clients</td>
+                    <td>04/3/2013</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/> Partnerships</td>
+                    <td>04/3/2013</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                <tr class="odd">
+                    <td><input type="checkbox"/>Jobs</td>
+                    <td>04/3/2013</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>John Doe</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
+    </section>
+</div>
 </body>
 </html>
