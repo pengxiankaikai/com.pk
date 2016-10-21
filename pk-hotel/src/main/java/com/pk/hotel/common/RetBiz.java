@@ -6,8 +6,7 @@ import java.util.List;
 /**
  * 返回结果封装
  * Created by pengkai
- * @date 2016/10/01
- * @mail pengxiankaikai@163.com
+ * @date 2016/9/14 0014.
  */
 public class RetBiz<T> {
 
@@ -24,6 +23,14 @@ public class RetBiz<T> {
     public RetBiz(String retCode, String msg) {
         this.retCode = retCode;
         this.msg = msg;
+    }
+
+    public RetBiz(String retCode){
+        if (RetResult.SUCCESS.equals(retCode)){
+            this.msg = RetResult.MSG_SUCCESS;
+        }else {
+            this.msg = RetResult.MSG_FAIL;
+        }
     }
 
     public String getRetCode() {
