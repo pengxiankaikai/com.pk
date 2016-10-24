@@ -23,6 +23,8 @@ public class RoomType {
     private Double discountPrice;
     /** 备注 ***/
     private String remark;
+    /** 图片 ***/
+    private String img;
     /*** 创建时间 ***/
     private Date createTime;
     /*** 修改时间 ***/
@@ -82,6 +84,14 @@ public class RoomType {
 
     public void setModifyTime(Date modifyTime) {
         this.modifyTime = modifyTime;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     @Override

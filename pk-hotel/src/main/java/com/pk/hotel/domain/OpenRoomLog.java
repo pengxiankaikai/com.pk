@@ -10,7 +10,7 @@ import java.util.Date;
  * @date 2016/10/21.
  */
 @Entity
-public class ConsumerOpenLog {
+public class OpenRoomLog {
 
     /****基础字段****/
     @Id

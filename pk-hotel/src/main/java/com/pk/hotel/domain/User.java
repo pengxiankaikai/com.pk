@@ -25,6 +25,12 @@ public class User {
     private String username;
     /** 密码 ***/
     private String password;
+    /** 电话 ***/
+    private String tel;
+    /** 邮箱 ***/
+    private String email;
+    /** 身份证 ***/
+    private String idCard;
     /** 酒店名 ***/
     private String hotelName;
     /** 房间数量 ***/
@@ -80,6 +86,30 @@ public class User {
 
     public Integer getRoomCount() {
         return roomCount;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getIdCard() {
+        return idCard;
+    }
+
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
     public void setRoomCount(Integer roomCount) {

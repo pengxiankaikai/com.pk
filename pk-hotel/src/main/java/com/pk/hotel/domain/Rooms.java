@@ -1,45 +1,33 @@
 package com.pk.hotel.domain;
 
-import com.pk.hotel.domain.enums.RoomStatus;
-
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.Date;
-
+import java.sql.Timestamp;
 
 /**
- * Created by pengkai
- * @date 2016/10/21.
+ * Created by Administrator on 2016/10/20 0020.
  */
-@Entity
-public class Rooms {
+public class RoomS {
 
-    /****基础字段****/
     @Id
     @GeneratedValue
     private Integer id;
-    /*** 创建时间 ***/
-    private Date createTime;
-    /*** 修改时间 ***/
-    private Date modifyTime;
-
+    /** 房间类型id ***/
+    private Integer roomTypeId;
     /** 房间号 ***/
     private String roomNo;
-    /** 房间类型ID ***/
-    private Integer roomTypeId;
-    /** 房间状态 ***/
-    private RoomStatus roomStatus;
-    /** 开房时间 ***/
-    private Date openTime;
-    /** 退房时间 ***/
-    private Date closeTime;
-    /** 是否预定时长 ***/
-    private boolean isReserveDuration;
-    /** 预定时长DAY ***/
-    private boolean ReserveDurationDAY;
-    /** 预定时长HOUR ***/
-    private boolean ReserveDurationHOUR;
+    /** 是否打开 ***/
+    private boolean isOpen;
+    /** 是否打开预定时长 ***/
+    private boolean isOpenReserve;
+    /** 预定时间（day） ***/
+    private Double reserveDay;
+    /** 预定时间（hour） ***/
+    private Timestamp reserveHour;
+    /** 创建时间 ***/
+    private Timestamp createtime;
+    /** 修改时间 ***/
+    private Timestamp modifytime;
 
     public Integer getId() {
         return id;
@@ -47,38 +35,6 @@ public class Rooms {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Date getModifyTime() {
-        return modifyTime;
-    }
-
-    public void setModifyTime(Date modifyTime) {
-        this.modifyTime = modifyTime;
-    }
-
-    public RoomStatus getRoomStatus() {
-        return roomStatus;
-    }
-
-    public void setRoomStatus(RoomStatus roomStatus) {
-        this.roomStatus = roomStatus;
-    }
-
-    public String getRoomNo() {
-        return roomNo;
-    }
-
-    public void setRoomNo(String roomNo) {
-        this.roomNo = roomNo;
     }
 
     public Integer getRoomTypeId() {
@@ -89,59 +45,59 @@ public class Rooms {
         this.roomTypeId = roomTypeId;
     }
 
-    public Date getOpenTime() {
-        return openTime;
+    public String getRoomNo() {
+        return roomNo;
     }
 
-    public void setOpenTime(Date openTime) {
-        this.openTime = openTime;
+    public void setRoomNo(String roomNo) {
+        this.roomNo = roomNo;
     }
 
-    public Date getCloseTime() {
-        return closeTime;
+    public boolean isOpen() {
+        return isOpen;
     }
 
-    public void setCloseTime(Date closeTime) {
-        this.closeTime = closeTime;
+    public void setOpen(boolean open) {
+        isOpen = open;
     }
 
-    public boolean isReserveDuration() {
-        return isReserveDuration;
+    public boolean isOpenReserve() {
+        return isOpenReserve;
     }
 
-    public void setReserveDuration(boolean reserveDuration) {
-        isReserveDuration = reserveDuration;
+    public void setOpenReserve(boolean openReserve) {
+        isOpenReserve = openReserve;
     }
 
-    public boolean isReserveDurationDAY() {
-        return ReserveDurationDAY;
+    public Double getReserveDay() {
+        return reserveDay;
     }
 
-    public void setReserveDurationDAY(boolean reserveDurationDAY) {
-        ReserveDurationDAY = reserveDurationDAY;
+    public void setReserveDay(Double reserveDay) {
+        this.reserveDay = reserveDay;
     }
 
-    public boolean isReserveDurationHOUR() {
-        return ReserveDurationHOUR;
+    public Timestamp getReserveHour() {
+        return reserveHour;
     }
 
-    public void setReserveDurationHOUR(boolean reserveDurationHOUR) {
-        ReserveDurationHOUR = reserveDurationHOUR;
+    public void setReserveHour(Timestamp reserveHour) {
+        this.reserveHour = reserveHour;
     }
 
-    @Override
-    public String toString() {
-        return "Rooms{" +
-                "id=" + id +
-                ", createTime=" + createTime +
-                ", modifyTime=" + modifyTime +
-                ", roomNo='" + roomNo + '\'' +
-                ", roomTypeId=" + roomTypeId +
-                ", openTime=" + openTime +
-                ", closeTime=" + closeTime +
-                ", isReserveDuration=" + isReserveDuration +
-                ", ReserveDurationDAY=" + ReserveDurationDAY +
-                ", ReserveDurationHOUR=" + ReserveDurationHOUR +
-                '}';
+    public Timestamp getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(Timestamp createtime) {
+        this.createtime = createtime;
+    }
+
+    public Timestamp getModifytime() {
+        return modifytime;
+    }
+
+    public void setModifytime(Timestamp modifytime) {
+        this.modifytime = modifytime;
     }
 }
