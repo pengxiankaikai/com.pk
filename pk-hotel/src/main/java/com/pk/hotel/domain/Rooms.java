@@ -1,12 +1,15 @@
 package com.pk.hotel.domain;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.sql.Timestamp;
 
 /**
- * Created by Administrator on 2016/10/20 0020.
+ * Created by pengkai
+ * @date 2016/10/20 0020.
  */
+@Entity
 public class RoomS {
 
     @Id

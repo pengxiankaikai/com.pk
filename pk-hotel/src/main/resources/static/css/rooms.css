@@ -18,3 +18,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
+.room_type {
+    margin-bottom: 10px;
+}

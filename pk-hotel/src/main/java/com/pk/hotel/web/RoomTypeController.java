@@ -17,7 +17,7 @@ import java.util.Date;
  * @date 2016/10/21.
  */
 @Controller
-@RequestMapping("/roomtype")
+@RequestMapping("/sys/roomtype")
 public class RoomTypeController {
 
     @Resource
