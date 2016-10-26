@@ -40,6 +40,7 @@ public class RoomS {
         this.id = id;
     }
 
+
     public Integer getRoomTypeId() {
         return roomTypeId;
     }
