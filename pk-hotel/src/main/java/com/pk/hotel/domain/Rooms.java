@@ -10,7 +10,7 @@ import java.sql.Timestamp;
  * @date 2016/10/20 0020.
  */
 @Entity
-public class RoomS {
+public class Rooms {
 
     @Id
     @GeneratedValue
